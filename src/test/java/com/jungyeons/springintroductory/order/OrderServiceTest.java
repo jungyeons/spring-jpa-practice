@@ -4,7 +4,6 @@ import com.jungyeons.springintroductory.AppConfig;
 import com.jungyeons.springintroductory.member.Grade;
 import com.jungyeons.springintroductory.member.Member;
 import com.jungyeons.springintroductory.member.MemberService;
-import com.jungyeons.springintroductory.member.MemberServiceImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
