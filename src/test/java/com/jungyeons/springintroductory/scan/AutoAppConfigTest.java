@@ -1,6 +1,7 @@
 package com.jungyeons.springintroductory.scan;
 
 import com.jungyeons.springintroductory.AppConfig;
+import com.jungyeons.springintroductory.AutoAppConfig;
 import com.jungyeons.springintroductory.member.MemberService;
 
 import org.junit.jupiter.api.Test;
@@ -12,7 +13,7 @@ public class AutoAppConfigTest {
 
     @Test
     void basicScan(){
-        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.AutoAppConfig.class);
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class);
         MemberService memberService =ac.getBean(MemberService.class);
         assertThat(memberService).isInstanceOf(MemberService.class);
     }
