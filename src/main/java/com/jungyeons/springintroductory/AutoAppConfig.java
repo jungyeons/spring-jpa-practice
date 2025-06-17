@@ -1,5 +1,7 @@
 package com.jungyeons.springintroductory;
 
+import com.jungyeons.springintroductory.member.MemoryMemberRepository;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
@@ -11,4 +13,8 @@ import org.springframework.context.annotation.FilterType;
 )
 public  class AutoAppConfig {
 
+    @Bean( name ="memoryMemberRepository")
+    public MemoryMemberRepository memoryMemberRepository(){
+        return new MemoryMemberRepository();
+    }
 }
